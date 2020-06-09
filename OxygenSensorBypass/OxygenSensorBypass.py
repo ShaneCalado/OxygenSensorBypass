@@ -11,8 +11,8 @@ global modifiedMode
 global voltageMod
 
 # 0 > Copy input voltage to output pin
-# 1 > Modify inout voltage by set amount (voltageMod) WIP
-# 2 > Modify voltage by (voltageMod) percent #WIP
+# 1 > Modify inout voltage by set amount (voltageMod)
+# 2 > Modify voltage by (voltageMod) percent
 modifiedMode = 0
 voltageMod = 0
 

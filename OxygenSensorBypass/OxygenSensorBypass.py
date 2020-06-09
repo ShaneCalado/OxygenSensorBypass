@@ -36,23 +36,23 @@ def copyInputSignal():
     # Output to pin 6
     GPIO.output(6, inputPinSignal)
 
-# Function to read the input voltage of pin 5, modify it my a fixed amount, and output it to pin 6
+# Function to read the input voltage of pin 5, modify it by a fixed amount, and output it to pin 6
 def modifyInputSignalFixed(int):
-    # Read inout from pin 5
+    # Read input from pin 5
     inputPinSignal = GPIO.input(5)
     newInputSignal = inputPinSignal + voltageMod
-    # if the new voltage is within a safe range, output it, otherwise output unmodified voltage
+    # if the new voltage is within a safe range send it to output, otherwise output unmodified voltage
     if newInputPinSignal <= GPIO.HIGH and newInputPinSignal >= GPIO.LOW:
         GPIO.output(6, newInputPinSignal)
     else:
         GPIO.output(6, inputPinSignal)
 
-# Function to read the input voltage of pin 5, modify it my a percent, and output it to pin 6
+# Function to read the input voltage of pin 5, modify it by a percent, and output it to pin 6
 def modifyInputSignalPercent(int):
-    # Read inout from pin 5
+    # Read input from pin 5
     inputPinSignal = GPIO.input(5)
     newInputSignal = inputPinSignal * (voltageMod / 100)
-    # if the new voltage is within a safe range, output it, otherwise output unmodified voltage
+    # if the new voltage is within a safe range send it to output, otherwise output unmodified voltage
     if newInputPinSignal <= GPIO.HIGH and newInputPinSignal >= GPIO.LOW:
         GPIO.output(6, newInputPinSignal)
     else:

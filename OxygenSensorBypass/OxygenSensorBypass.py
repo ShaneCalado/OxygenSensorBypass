@@ -14,6 +14,7 @@ global voltageMod
 # 1 > Modify inout voltage by set amount (voltageMod)
 # 2 > Modify voltage by (voltageMod) percent
 modifiedMode = 0
+# Safe range is between 0 and 3.3v
 voltageMod = 0
 
 # Initialize GPIO interface
